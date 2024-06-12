@@ -28,18 +28,20 @@ body.escurecer::before {
     top: 0;
     left: 0;
 }
-.header-mobile {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    max-width: 1110px;
+    margin-inline: auto;
 }
-.header-mobile button {
+header button {
     border: none;
     background: none;
     width: fit-content;
 }
-.header-mobile > nav {
+header nav.mobile {
     background-color: var(--almost-white);
     position: fixed;
     right: -16rem;
@@ -55,40 +57,44 @@ body.escurecer::before {
 
     transition: 0.7s;
 }
-.header-mobile nav.abrir {
+header nav.mobile.abrir {
     right: 0;
 }
-.header-mobile nav a {
+header .mobile a {
     text-decoration: none;
     color: var(--dark-blue);
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
-.header-mobile nav button {
+header nav button {
     align-self: flex-end;
     margin-bottom: 4rem;
+}
+main {
+    max-width: 1110px;
+    margin-inline: auto;
 }
 .first-section {
     margin-bottom: 4rem;
 }
-.first-section > img {
+.first-section img {
     width: 100%;
     margin-bottom: 1.5rem;
 }
-.first-section > h1 {
+.first-section h1 {
     font-size: 2.5rem;
     line-height: 100%;
     font-weight: 800;
     margin-bottom: 1rem;
     color: var(--dark-blue);
 }
-.first-section > p {
+.first-section p {
     font-size: 0.9375rem;
     line-height: 1.625rem;
     color: var(--gunmetal);
     margin-bottom: 1.5rem;
 }
-.first-section > button {
+.first-section  button {
     padding: 0.75rem 2rem;
     border: none;
     background-color: var(--vermillion);

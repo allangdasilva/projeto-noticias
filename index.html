@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W. Notícias</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="imagens/logo.svg" alt="Logo W. Notícias">
 
         <button>
             <img src="imagens/icon-menu.svg" alt="ícone menu hamburguer">
         </button>
-        <nav>
+        <nav class="mobile">
             <button>
                 <img src="imagens/icon-menu-close.svg" alt="Ícone de X para fechar o menu">
             </button>
@@ -24,13 +25,25 @@
             <a href="#">Trending</a>
             <a href="#">Categoria</a>
         </nav>
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popuplar</a>
+            <a href="#">Trending</a>
+            <a href="#">Categoria</a>
+        </nav>
     </header>
     <main>
         <section class="first-section">
-            <img src="imagens/image-web-3-mobile.jpg" alt="ícone do puzzle colorido">
+            <picture>
+                <source media="(min-width: 700px)" srcset="/imagens/image-web-3-desktop.jpg">
+                <img src="imagens/image-web-3-mobile.jpg" alt="ícone do puzzle colorido">
+            </picture>
             <h1>O futuro brilhante da Web 3.0?</h1>
-            <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
-            <button>Ler Mais</button>
+            <div>
+                <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
+                <button>Ler Mais</button>
+            </div>
         </section>
         <section class="second-section">
             <h2>Novo</h2>
