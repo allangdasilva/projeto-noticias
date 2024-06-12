@@ -40,6 +40,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 header nav.mobile {
     background-color: var(--almost-white);
@@ -69,6 +70,9 @@ header .mobile a {
 header nav button {
     align-self: flex-end;
     margin-bottom: 4rem;
+}
+header .desktop {
+    display: none;
 }
 main {
     max-width: 1110px;
@@ -132,6 +136,9 @@ main {
     color: var(--silver);
     font-size: 0.9375rem;
     line-height: 1.625rem;
+}
+.third-section a {
+    text-decoration: none;
 }
 .third-section > div {
     display: flex;
